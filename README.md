@@ -52,6 +52,7 @@ docker compose -f compose/rest.yml up -d
 docker compose -f compose/rest.yml exec rest-server python server.py
 docker compose -f compose/rest.yml exec rest-client python client.py --op both -a 2 -b 3
 ```
+![alt text](<Screenshot 2025-09-20 225307.png>)
 
 ### JSON-RPC
 ```bash
@@ -59,6 +60,7 @@ docker compose -f compose/rpc.yml up -d
 docker compose -f compose/rpc.yml exec rpc-server python rpcserver.py
 docker compose -f compose/rpc.yml exec rpc-client python rpcclient.py
 ```
+![alt text](<Screenshot 2025-09-20 223957.png>)
 
 ### SOAP
 ```bash
@@ -66,6 +68,7 @@ docker compose -f compose/soap.yml up -d
 docker compose -f compose/soap.yml exec soap-server python server.py
 docker compose -f compose/soap.yml exec soap-client python client.py
 ```
+![alt text](<Screenshot 2025-09-20 224426.png>)
 
 ### MQTT (internal broker service)
 ```bash
@@ -89,6 +92,7 @@ docker compose -f compose/udp.yml up -d
 docker compose -f compose/udp.yml exec udp-server python serverUDP.py
 docker compose -f compose/udp.yml exec udp-client python clientUDP.py
 ```
+![alt text](<Screenshot 2025-09-20 225437.png>)
 
 ### ZeroMQ
 ```bash
